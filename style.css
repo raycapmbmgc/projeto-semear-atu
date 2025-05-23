@@ -380,7 +380,6 @@ header {
   font-weight: 600;
   color: #7d117d;
 }
-
 .conteudo-pandemia {
   display: flex;
   flex-wrap: wrap;
@@ -396,28 +395,30 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100%;
   position: relative;
   overflow: hidden;
   border: 4px solid #3cd67c;
   border-radius: 20px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  aspect-ratio: 1 / 1; /* Ajuda a manter o tamanho em tablets */
 }
 
 .carrosselpandemia img {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0; /* substitui top, left, width, height */
   width: 100%;
   height: 100%;
   object-fit: cover;
   opacity: 0;
+  pointer-events: none; /* Impede bugs de toque em iOS */
   transition: opacity 1s ease-in-out;
   border-radius: 16px;
+  z-index: 1;
 }
 
 .carrosselpandemia img.active {
   opacity: 1;
+  pointer-events: auto;
   z-index: 2;
 }
 
