@@ -26,7 +26,7 @@
 
     <div class="container">
       <div class="imagemprincipal">
-       <img src="img/capa.png" />
+        <img src="/img/capa.png" alt="Imagem Principal" />
       </div>
 
       <div class="informacoes">
@@ -64,7 +64,7 @@
       <section class="sobre-nos">
         <h2>Quem nós somos?</h2>
         <div class="conteudo">
-          <img src="/img/nos.jpeg" alt="Imagem sobre a equipe ou empresa" />
+          <img src="/img/quemsomos.jpeg" alt="Imagem sobre a equipe ou empresa" />
           <div class="texto">
             <p>
               O Projeto Semear é uma ação social e evangelística que leva amor, cuidado e esperança a quem mais precisa.
@@ -118,13 +118,15 @@
 <div class="carrossel verde" data-id="3">
   <div class="titulo-sobreposto">CLÍNICA SORRISUS</div>
   <button class="seta esquerda" onclick="mudarImagem(3, -1)">‹</button>
-  <img src="/img/crianca.jpeg" class="active" />
-  <img src="/img/crianca2.jpeg" />
-  <img src="/img/crianca3.jpeg" />
-  <img src="/img/crianca4.jpeg" />
+  <div class="imagens">
+    <img src="/img/crianca.jpeg" class="active" />
+    <img src="/img/crianca2.jpeg" />
+    <img src="/img/crianca3.jpeg" />
+    <img src="/img/crianca4.jpeg" />
+  </div>
   <button class="seta direita" onclick="mudarImagem(3, 1)">›</button>
   <div class="indicadores" data-id="3"></div>
-  <p class="legenda">no Dia das Crianças, 20 crianças participaram de avaliação odontológica, receberam procedimentos clínicos, aprenderam sobre a higiene bucal correta e ganharam um kit de limpeza (escova, pasta e fio dental). Para encerrar, todas receberam um lanche feliz do McDonald’s.</p>
+ <p class="legenda" id="legenda-3"></p>
 </div>
 
 <!-- Carrossel 4 - Vermelho -->
