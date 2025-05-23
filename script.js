@@ -7,7 +7,6 @@ const estados = {
   6: 0
 };
 
-
 const legendas3 = [
   "Ação social na Clínica Sorrisus 02.10.2021",
   "Dia das crianças com saúde bucal: avaliação odontológica.",
@@ -15,8 +14,9 @@ const legendas3 = [
   "Kit de limpeza com escova, pasta e fio dental + lanche feliz do McDonald's!"
 ];
 
-document.addEventListener("DOMContentLoaded", () => {
- for (let id = 1; id <= 6; id++) {
+// Espera o carregamento total da página
+window.addEventListener("load", () => {
+  for (let id = 1; id <= 6; id++) {
     const carrossel = document.querySelector(`.carrossel[data-id="${id}"]`);
     if (!carrossel) continue;
 
@@ -29,12 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
     imagens.forEach((_, index) => {
       const indicador = document.createElement("span");
       indicador.classList.add("indicador");
+      indicador.setAttribute("tabindex", "0");
       if (index === 0) indicador.classList.add("ativo");
-      indicador.addEventListener("click", () => atualizarCarrossel(id, index));
+
+      indicador.addEventListener("pointerdown", () => atualizarCarrossel(id, index));
       containerIndicadores.appendChild(indicador);
     });
   }
-
 
   const legenda = document.getElementById("legenda-3");
   if (legenda) {
@@ -72,7 +73,6 @@ function mudarParaImagem(id, novaIndex) {
   atualizarCarrossel(id, novaIndex);
 }
 
-// Função genérica para carrosséis simples com troca automática
 function iniciarCarrosselSimples(classe) {
   const container = document.querySelector(`.${classe}`);
   if (!container) return;
@@ -87,6 +87,6 @@ function iniciarCarrosselSimples(classe) {
   }, 2000);
 }
 
-// Iniciar carrosséis simples (sem setas/indicadores)
+// Inicia os carrosséis automáticos
 iniciarCarrosselSimples('carrosselgigantinhos');
 iniciarCarrosselSimples('carrosselpandemia');
