@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto Semear Missões</title>
+  <link rel="shortcut icon" type="imagex/png" href="/img/logo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@700&family=Quicksand:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="logo">
+        <img src="/img/logo.png" alt="Logo" />
+      </div>
+      <div class="redes-sociais">
+        <a href="/contato.html">Contato</a>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="imagemprincipal">
+        <img src="/img/capa.png" alt="Imagem Principal" />
+      </div>
+
+      <div class="informacoes">
+        <!-- Blocos de contato -->
+        <div class="bloco">
+          <div class="topo">
+            <img src="/img/contato.png" alt="contato" />
+            <h3>Contato</h3>
+          </div>
+          <p>Fale conosco no WhatsApp: <br />
+            <a href="https://wa.me/5582996141189" target="_blank">+55 (82)9 9614-1189</a>
+          </p>
+        </div>
+        <div class="bloco">
+          <div class="topo">
+            <img src="/img/selecao.png" alt="selecao" />
+            <h3>Processo seletivo</h3>
+          </div>
+          <p>Enviar currículo para: <br />
+            <a href="mailto:semearmissoesmcz@gmail.com">semearmissoesmcz@gmail.com</a>
+          </p>
+        </div>
+        <div class="bloco">
+          <div class="topo">
+            <img src="/img/aviao-de-papel.png" alt="email" />
+            <h3>Email</h3>
+          </div>
+          <p><a href="mailto:semearmissoesmcz@gmail.com">semearmissoesmcz@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="linha"></div>
+
+      <!-- Seção Sobre Nós -->
+      <section class="sobre-nos">
+        <h2>Quem nós somos?</h2>
+        <div class="conteudo">
+          <img src="/img/quemsomos.jpeg" alt="Imagem sobre a equipe ou empresa" />
+          <div class="texto">
+            <p>
+              O Projeto Semear é uma ação social e evangelística que leva amor, cuidado e esperança a quem mais precisa.
+              Atuamos de forma voluntária em comunidades carentes, hospitais, abrigos, orfanatos e presídios, levando
+              doações, mensagens de fé e apoio humanitário. Todo o trabalho é realizado por voluntários e mantido com
+              100% de doações.
+              Também somos responsáveis pelo CMEI Gigantinhos Graciliano Ramos, onde cuidamos e semeamos valores desde a
+              infância.
+            </p>
+
+          </div>
+        </div>
+      </section>
+
+      <div class="linha"></div>
+
+      <section class="secao-acoes">
+        <h1 class="titulo-carrosseis">Ações Sociais</h1>
+        <section class="carrosseis">
+                 
+
+          <!-- Carrossel 1 - Roxo -->
+<div class="carrossel roxo" data-id="1">
+  <div class="titulo-sobreposto">AÇÃO EM TRAIPU</div>
+  <button class="seta esquerda" onclick="mudarImagem(1, -1)">‹</button>
+  <img src="/img/nos.jpeg" class="active" />
+  <img src="/img/mae2.jpeg" />
+  <img src="/img/mae3.jpeg" />
+  <img src="/img/mae4.jpeg" />
+  <img src="/img/mae5.jpeg" />
+  <img src="/img/mae6.jpeg" />
+  <img src="/img/mae7.jpeg" />
+  <button class="seta direita" onclick="mudarImagem(1, 1)">›</button>
+  <div class="indicadores" data-id="1"></div>
+  <p class="legenda">Medição de pressão arterial, entrega de cestas básicas, roupas, brinquedos e lanches para crianças e adultos.</p>
+</div>
+
+<!-- Carrossel 2 - Azul -->
+<div class="carrossel azul" data-id="2">
+  <div class="titulo-sobreposto">AÇÃO EM SANTA LUZIA DO NORTE</div>
+  <button class="seta esquerda" onclick="mudarImagem(2, -1)">‹</button>
+  <img src="/img/escola.jpeg" class="active" />
+  <img src="/img/escola2.jpeg" />
+  <img src="/img/escola3.jpeg" />
+  <button class="seta direita" onclick="mudarImagem(2, 1)">›</button>
+  <div class="indicadores" data-id="2"></div>
+  <p class="legenda">94 cestas básicas arrecadadas sendo entregues para famílias carentes</p>
+</div>
+
+<!-- Carrossel 3 - Verde -->
+<div class="carrossel verde" data-id="3">
+  <div class="titulo-sobreposto">CLÍNICA SORRISUS</div>
+  <button class="seta esquerda" onclick="mudarImagem(3, -1)">‹</button>
+  <img src="/img/crianca.jpeg" class="active" />
+  <img src="/img/crianca2.jpeg" />
+  <img src="/img/crianca3.jpeg" />
+  <img src="/img/crianca4.jpeg" />
+  <button class="seta direita" onclick="mudarImagem(3, 1)">›</button>
+  <div class="indicadores" data-id="3"></div>
+  <p class="legenda">02.10.2021</p>
+</div>
+
+<!-- Carrossel 4 - Vermelho -->
+<div class="carrossel cor-vermelha" data-id="4">
+  <div class="titulo-sobreposto">VALE DO REGINALDO</div>
+  <button class="seta esquerda" onclick="mudarImagem(4, -1)">‹</button>
+  <img src="img/vale1.jpeg" class="active">
+  <img src="img/vale2.jpeg">
+  <img src="img/vale3.jpeg">
+  <img src="img/vale4.jpeg">
+  <img src="img/vale5.jpeg">
+  <button class="seta direita" onclick="mudarImagem(4, 1)">›</button>
+  <div class="indicadores" data-id="4"></div>
+  <p class="legenda">Dentista, presença de técnica de enfermagem, entrega de lanches, roupas, lanchinhos e apresentação com personagens para as crianças.</p>
+</div>
+
+<!-- Carrossel 5 - Laranja -->
+<div class="carrossel cor-laranja" data-id="5">
+  <div class="titulo-sobreposto">LAR DE MENINAS - CORURIPE</div>
+  <button class="seta esquerda" onclick="mudarImagem(5, -1)">‹</button>
+  <img src="img/lar1.jpeg" class="active">
+  <img src="img/lar2.jpeg">
+  <img src="img/lar3.jpeg">
+  <img src="img/lar4.jpeg">
+  <img src="img/lar5.jpeg">
+  <img src="img/lar6.jpeg">
+  <button class="seta direita" onclick="mudarImagem(5, 1)">›</button>
+  <div class="indicadores" data-id="5"></div>
+  <p class="legenda">Dentista, canções, cabeleireiros e brindes para as meninas.</p>
+</div>
+
+<!-- Carrossel 6 - Ciano -->
+<div class="carrossel cor-ciano" data-id="6">
+  <div class="titulo-sobreposto">AÇÃO EM CRAÍBAS</div>
+  <img src="img/craibas1.jpeg" class="active">
+  <img src="img/craibas2.jpeg">
+  <img src="img/craibas3.jpeg">
+  <img src="img/craibas4.jpeg">
+  <img src="img/craibas5.jpeg">
+  <button class="seta seta esquerda" onclick="mudarImagem(6, -1)">‹</button>
+  <button class="seta seta direita" onclick="mudarImagem(6, 1)">›</button>
+  <div class="indicadores" data-id="6"></div>
+  <p class="legenda">Entrega de brinquedos, lanches, mochilas escolar, roupas, sapatos, lanches, kit de higiene bucal + entrega de pernil.</p>
+</div>
+
+
+    </div> <!-- fecha .carrosseis -->
+    </section> <!-- fecha .secao-acoes -->
+    </section>
+
+
+    <div class="linha"></div>
+
+    <!-- Pandemia da COVID-19 -->
+    <section class="Pandemia">
+      <h2>Ação Social Realizada Durante a Pandemia da COVID-19</h2>
+      <div class="conteudo-pandemia">
+        <div class="carrosselpandemia" data-id="pandemia">
+          <img src="/img/pandemia1.jpeg" class="active" />
+          <img src="/img/pandemia2.jpeg" />
+          <img src="/img/pandemia3.jpeg" />
+          <img src="/img/pandemia4.jpeg" />
+        </div>
+        <div class="texto-pandemia">
+          <p>
+            Durante a pandemia da COVID-19, mesmo diante da paralisação global e do fechamento de instituições,
+            a Associação Semear Missões manteve seu compromisso com as comunidades mais vulneráveis.
+            Adaptando suas ações aos protocolos de segurança,
+            a organização seguiu atuando com sensibilidade e responsabilidade, oferecendo apoio material,
+            acolhimento e solidariedade em um período de grande isolamento e necessidade.
+
+            Sua atuação constante nesse momento crítico demonstrou não só resiliência,
+            mas também um profundo comprometimento com sua missão e valores humanos, sendo um exemplo de dedicação e
+            inspiração em meio à adversidade.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="linha"></div>
+
+    <!-- Como Doar -->
+    <section class="comoDoar">
+      <div class="conteudo">
+        <div class="texto">
+          <h2>Como faço para doar?</h2>
+          <p>
+            Quer fazer parte dessa corrente do bem? É simples!<br><br>
+            Entre em contato com a nossa equipe através do e-mail
+            <strong><a href="mailto:semearmissoesmcz@gmail.com">semearmissoesmcz@gmail.com</a></strong>
+            ou pelo WhatsApp
+            <strong><a href="https://wa.me/5582996141189" target="_blank">(82) 9 9614-1189</a></strong>.
+            Vamos te orientar direitinho sobre como contribuir e ajudar a transformar vidas com o Projeto Semear.
+          </p>
+        </div>
+        <div class="container-story">
+          <div class="story rosa">
+            <video src="/video/instituto.mp4" autoplay loop muted playsinline></video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="linha"></div>
+
+    <!-- Gigantinhos -->
+    <section class="Gigantinhos">
+      <h2> CMEI/RP - Prof Claudia Maria da Silva Brasil. <br> Gigantinhos</h2>
+      <div class="conteudo">
+        <div class="carrosselgigantinhos" data-id="gigantinhos">
+          <img src="/img/dama1.png" class="active" />
+          <img src="/img/crianças2.JPEG" />
+          <img src="/img/rodacrianças.jpg" />
+          <img src="/img/crianças4.jpg" />
+        </div>
+        <div class="texto-gigantinhos">
+          <p>
+            A creche Semear Missões trabalha no desenvolvimento integral da criança, em seus aspectos físicos, psicológicos, intelectuais e sociais, buscando atuar como parte integrante do sistema de ensino municipal, complementando a ação da família e da comunidade, fomentando princípios como o respeito, dignidade, assegurando direitos, formas de expressão, comunicação, entre os demais englobados pela legislação que normatiza a Educação Infantil,
+             contribuindo assim na para o desenvolvimento e aprendizagem das crianças.
+            Nossa creche oferta matrículas para crianças de 2 (dois) anos a 5 (cinco) anos e 11 meses de
+             idade em tempo integral, para região
+apresentada. Com intuito de beneficiar as famílias de baixa renda.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-conteudo">
+      <div class="coluna logo-coluna">
+        <img src="/img/logo.png" alt="Logo da empresa" class="logo-footer" />
+      </div>
+      <div class="coluna">
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="/">Início</a></li>
+          <li><a href="/contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="coluna">
+        <h4>Contato</h4>
+        <ul>
+          <li>Email: semearmissoesmcz@gmail.com</li>
+          <li>WhatsApp: (82) 99614-1189</li>
+        </ul>
+      </div>
+      <div class="coluna">
+        <h4>Redes Sociais</h4>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/projetosemearmissoes/" target="_blank"><i class="fab fa-instagram"></i>
+            Instagram</a><br />
+          <a href="https://wa.me/5582996141189" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copy">
+      &copy; 2025 Projeto Semear Missões. Todos os direitos reservados.
+    </div>
+  </footer>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+
+</html>
