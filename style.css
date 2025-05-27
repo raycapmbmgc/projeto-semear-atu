@@ -15,6 +15,7 @@ html, body {
   line-height: 1.5;
 }
 
+
 .wrapper {
   min-height: 100vh;      
   display: flex;
@@ -265,6 +266,9 @@ header {
   font-size: 14px;
   max-width: 90%;
   text-align: center;
+  display: flex;
+
+ 
 }
 .titulo-sobreposto {
   position: absolute;
@@ -364,6 +368,66 @@ header {
 .seta.direita {
   right: 12px;
 }
+
+#selecao-setas {
+  text-align: center;
+  margin-top: 20px;
+  user-select: none;
+}
+
+/* Estilo base delicado */
+#seta-esquerda, #seta-direita {
+  background-color: #f9f0ff; /* lilás bem clarinho */
+  border: 2px solid #d8b4fe; /* lilás médio */
+  color: #9c6ade; /* lilás escuro */
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 18px;
+  margin: 0 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(156, 106, 222, 0.3);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+  outline: none;
+  user-select: none;
+}
+
+/* Hover com tom rosa e verde */
+#seta-esquerda:hover {
+  background-color: #ffe4e6; /* rosa clarinho */
+  border-color: #f472b6; /* rosa médio */
+  color: #db2777; /* rosa escuro */
+  box-shadow: 0 4px 10px rgba(219, 39, 119, 0.4);
+  transform: scale(1.05);
+}
+
+#seta-direita:hover {
+  background-color: #dcfce7; /* verde clarinho */
+  border-color: #4ade80; /* verde médio */
+  color: #16a34a; /* verde escuro */
+  box-shadow: 0 4px 10px rgba(22, 163, 74, 0.4);
+  transform: scale(1.05);
+}
+
+/* Ativo (clicado) */
+#seta-esquerda:active, #seta-direita:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(156, 106, 222, 0.5);
+}
+
+/* Desabilitado */
+button:disabled {
+  border-color: #ddd;
+  color: #bbb;
+  background-color: #f8f8f8;
+  cursor: default;
+  box-shadow: none;
+}
+
 
 .Pandemia {
   padding: 40px 20px;
