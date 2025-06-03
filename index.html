@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -60,6 +61,7 @@
 
       <div class="linha"></div>
 
+      <!-- Seção Sobre Nós -->
       <section class="sobre-nos">
         <h2>Quem nós somos?</h2>
         <div class="conteudo">
@@ -73,6 +75,7 @@
               Também somos responsáveis pelo CMEI Gigantinhos Graciliano Ramos, onde cuidamos e semeamos valores desde a
               infância.
             </p>
+
           </div>
         </div>
       </section>
@@ -81,11 +84,10 @@
 
       <section class="secao-acoes">
         <h1 class="titulo-carrosseis">Ações Sociais</h1>
-        <div class="navegacao-carrosseis">
+        <section class="carrosseis">
+                 
 
-        <section class="carrosseis" id="carroseis-containers ">
-<button id="seta-esquerda">‹</button>
-          <!-- Carrossel  Roxo -->
+          <!-- Carrossel 1 - Roxo -->
 <div class="carrossel roxo" data-id="1">
   <div class="titulo-sobreposto">AÇÃO EM TRAIPU</div>
   <button class="seta esquerda" onclick="mudarImagem(1, -1)">‹</button>
@@ -101,7 +103,7 @@
   <p class="legenda">Medição de pressão arterial, entrega de cestas básicas, roupas, brinquedos e lanches para crianças e adultos.</p>
 </div>
 
-<!-- Carrossel  Azul -->
+<!-- Carrossel 2 - Azul -->
 <div class="carrossel azul" data-id="2">
   <div class="titulo-sobreposto">AÇÃO EM SANTA LUZIA DO NORTE</div>
   <button class="seta esquerda" onclick="mudarImagem(2, -1)">‹</button>
@@ -113,7 +115,7 @@
   <p class="legenda">94 cestas básicas arrecadadas sendo entregues para famílias carentes</p>
 </div>
 
-<!-- Carrossel Verde -->
+<!-- Carrossel 3 - Verde -->
 <div class="carrossel verde" data-id="3">
   <div class="titulo-sobreposto">CLÍNICA SORRISUS</div>
   <button class="seta esquerda" onclick="mudarImagem(3, -1)">‹</button>
@@ -128,7 +130,7 @@
  <p class="legenda" id="legenda-3"></p>
 </div>
 
-<!-- Carrossel Vermelho -->
+<!-- Carrossel 4 - Vermelho -->
 <div class="carrossel cor-vermelha" data-id="4">
   <div class="titulo-sobreposto">VALE DO REGINALDO</div>
   <button class="seta esquerda" onclick="mudarImagem(4, -1)">‹</button>
@@ -142,7 +144,7 @@
   <p class="legenda">Dentista, presença de técnica de enfermagem, entrega de lanches, roupas, lanchinhos e apresentação com personagens para as crianças.</p>
 </div>
 
-<!-- Carrossel Laranja -->
+<!-- Carrossel 5 - Laranja -->
 <div class="carrossel cor-laranja" data-id="5">
   <div class="titulo-sobreposto">LAR DE MENINAS - CORURIPE</div>
   <button class="seta esquerda" onclick="mudarImagem(5, -1)">‹</button>
@@ -157,7 +159,7 @@
   <p class="legenda">Dentista, canções, cabeleireiros e brindes para as meninas.</p>
 </div>
 
-<!-- Carrossel  Ciano -->
+<!-- Carrossel 6 - Ciano -->
 <div class="carrossel cor-ciano" data-id="6">
   <div class="titulo-sobreposto">AÇÃO EM CRAÍBAS</div>
   <img src="img/craibas1.jpeg" class="active">
@@ -171,18 +173,65 @@
   <p class="legenda">Entrega de brinquedos, lanches, mochilas escolar, roupas, sapatos, lanches, kit de higiene bucal + entrega de pernil.</p>
 </div>
 
-<button id="seta-direita">›</button>
-
-    </div> 
-
-    </div> 
+    </div> <!-- fecha .carrosseis -->
+    </section> <!-- fecha .secao-acoes -->
     </section>
-    </section>
+
+
+      <h1 style="text-align: center; margin-top: 40px; color: #333;">
+  Outras ações
+</h1>
+    <div class="carousel-container">
+  <button class="prev">&#10094;</button>
+  <div class="carousel">
+    <div class="carousel-item">
+      <img src="/img/outras.jpeg" alt="Imagem 1" />
+      <p>Ação em Portelinha</p>
+    </div>
+    <div class="carousel-item">
+      <img src="/img/outras1.jpeg" alt="Imagem 2" />
+      <p>Ação em casas de lona - Village</p>
+    </div>
+    <div class="carousel-item">
+      <img src="/img/outras2.jpeg"alt="Imagem 3" />
+      <p>Comunidade cidades sorrisos - Benedito Bentes</p>
+    </div>
+    <div class="carousel-item">
+      <img src="/img/outras3.jpeg" alt="Imagem 4" />
+      <p>Colina II</p>
+    </div>
+    <div class="carousel-item">
+      <img src="/img/outras4.jpeg" alt="Imagem 5" />
+      <p>Mata do Rolo</p>
+    </div>
+    <div class="carousel-item">
+      <img src="/img/outras5.jpeg" alt="Imagem 6" />
+      <p>Orfanatos </p>
+    </div>
+     <div class="carousel-item">
+      <img src="/img/outras6.jpeg" alt="Imagem 7" />
+      <p>Barra de Santo Antônio  </p>
+    </div>
+     <div class="carousel-item">
+      <img src="/img/outras7.jpeg" alt="Imagem 8" />
+      <p>Pão de Açúcar  </p>
+    </div>
+     <div class="carousel-item">
+      <img src="/img/outras8.jpeg" alt="Imagem 9" />
+      <p>Palmeira dos índios  </p>
+    </div>
+     <div class="carousel-item">
+      <img src="/img/outras9.jpeg" alt="Imagem 10" />
+      <p>Asilo</p>
+    </div>
+  </div>
+  <button class="next">&#10095;</button>
+</div>
 
 
     <div class="linha"></div>
 
-    <!-- Sessão da pandemia -->
+    <!-- Pandemia da COVID-19 -->
     <section class="Pandemia">
       <h2>Ação Social Realizada Durante a Pandemia da COVID-19</h2>
       <div class="conteudo-pandemia">
@@ -210,7 +259,7 @@
 
     <div class="linha"></div>
 
-    <!--  Sessão de Como Doar -->
+    <!-- Como Doar -->
     <section class="comoDoar">
       <div class="conteudo">
         <div class="texto">
@@ -234,7 +283,7 @@
 
     <div class="linha"></div>
 
-    <!-- Sessão Gigantinhos -->
+    <!-- Gigantinhos -->
     <section class="Gigantinhos">
       <h2> CMEI/RP - Prof Claudia Maria da Silva Brasil. <br> Gigantinhos</h2>
       <div class="conteudo">
@@ -247,16 +296,17 @@
         <div class="texto-gigantinhos">
           <p>
             A creche Semear Missões trabalha no desenvolvimento integral da criança, em seus aspectos físicos, psicológicos, intelectuais e sociais, buscando atuar como parte integrante do sistema de ensino municipal, complementando a ação da família e da comunidade, fomentando princípios como o respeito, dignidade, assegurando direitos, formas de expressão, comunicação, entre os demais englobados pela legislação que normatiza a Educação Infantil,
-             contribuindo assim na para o desenvolvimento e aprendizagem das crianças.
+             contribuindo assim na para o desenvolvimento e aprendizagem das crianças.
             Nossa creche oferta matrículas para crianças de 2 (dois) anos a 5 (cinco) anos e 11 meses de
              idade em tempo integral, para região
-apresentada. Com intuito de beneficiar as famílias de baixa renda.
+apresentada. Com intuito de beneficiar as famílias de baixa renda.
           </p>
         </div>
       </div>
     </section>
   </div>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="footer-conteudo">
       <div class="coluna logo-coluna">
@@ -292,6 +342,9 @@ apresentada. Com intuito de beneficiar as famílias de baixa renda.
   </div>
 
   <script src="/script.js"></script>
+  <script>
+    
+  </script>
 </body>
 
 </html>
